@@ -1,4 +1,4 @@
-#Created Token available on ICP network:
+# Created Token available on ICP network:
 https://7d2q5-7qaaa-aaaag-qbtza-cai.ic0.app/
 
 
