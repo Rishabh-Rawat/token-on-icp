@@ -1,3 +1,12 @@
+Created Token available on ICP network:
+https://7d2q5-7qaaa-aaaag-qbtza-cai.ic0.app/
+
+
+
+
+# Help in Development
+
+
 # Check your Balance
 
 1. Find out your principal id:
