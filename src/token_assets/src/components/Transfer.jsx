@@ -22,8 +22,8 @@ function Transfer() {
     });
 
     setText(
-      // await authenticatedCanister.transfer(Principal.fromText(to), Number(amt))
-      await token.transfer(Principal.fromText(to), Number(amt))
+      await authenticatedCanister.transfer(Principal.fromText(to), Number(amt)) // for using on the mainnet
+      // await token.transfer(Principal.fromText(to), Number(amt)) // for using locally
     );
     setIsDisabled(false);
     setToShow(true);

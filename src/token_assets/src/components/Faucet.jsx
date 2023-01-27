@@ -16,8 +16,8 @@ function Faucet(props) {
       agentOptions: { identity },
     });
 
-    // setText(await authenticatedCanister.payOut());
-    setText(await token.payOut());
+    setText(await authenticatedCanister.payOut()); // for using on the mainnet
+    // setText(await token.payOut());  // for using locally
   }
 
   return (
@@ -31,7 +31,8 @@ function Faucet(props) {
       <label>
         Get your free CHAD tokens here! Claim 10,000 CHAD tokens to your
         account.
-        {/* <br />[{props.user}]. */}
+        <br />
+        Your Principal ID : {props.user}
       </label>
       <p className="trade-buttons">
         <button id="btn-payout" onClick={handleClick} disabled={isDisabled}>
