@@ -64,6 +64,10 @@ actor Token {
 
     };
 
+    public query func getAllUsers() : async ([Principal]) {
+        return Iter.toArray(balances.keys());
+    };
+
     system func preupgrade() {
         balanceEntries := Iter.toArray(balances.entries());
     };
